@@ -1,0 +1,10 @@
+{% block content %}
+<p></p>
+<h2 class="text-center"><img src="https://img.icons8.com/wired/64/000000/map-editing.png">Выберите город</h2>
+<p></p>
+<p>
+	{% for i in a %}
+	   <a href="#">{{i.name}}</a><br>
+	{% endfor %}
+</p>
+{% endblock %}

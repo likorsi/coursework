@@ -1,0 +1,24 @@
+{% block content %}
+
+<p></p>
+<p></p>
+<p><h1 style="font-size: 60px">Weather</h1> 
+</p>
+<hr>
+<div class="row">
+
+  <div class="col-md-1"></div>    
+  <div class="col-md-2">
+     <img src="https://img.icons8.com/wired/64/000000/marker.png">
+     <p>тут будут город, страна, координаты</p>
+  </div>
+  <div class="col-md-9">
+    <img src="https://img.icons8.com/wired/64/000000/clouds.png">
+    {% include "weather/includes/days.html" %}
+  </div>
+  <div class="col-md-1"></div>
+
+</div>
+
+
+{% endblock %}

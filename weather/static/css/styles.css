@@ -1,0 +1,25 @@
+
+h1{
+    font-size: 40pt;
+    color: #411034;
+    text-align: center;    
+}
+
+a {
+  font-size: 20pt;
+  color: #411034;   
+}
+
+p {
+   font-size: 20pt;
+   color: #411034; 
+}
+
+a:hover { 
+   color: #411034 !important;
+}
+
+
+.date {
+    color: #828282;
+}

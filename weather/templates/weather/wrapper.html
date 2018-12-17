@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Weather</title>
+  <!-- Кодировка веб-страницы -->
+  <meta charset="UTF-8">
+  <!-- Настройка viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+  <!-- Навигация -->
+  <nav class="navbar navbar-light bg-faded" style="background-color: #8d2d66">
+    <a class="navbar-brand navbar-fixed-top"  style="color: white" href="#">
+    <img src="https://img.icons8.com/plasticine/100/000000/pig.png"> Курсовая работа Корецкой Лидии К3140</a>
+  </nav>
+  <!-- Контент страницы -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Левая колонка -->
+        <div class="col-md-9">
+          {% include "weather/includes/left_col.html" %}
+        </div>
+        <!-- Правая колонка -->
+        <div class="col-md-3" style="border-left: 3px solid #411034">
+          {% include "weather/includes/right_col.html" %}
+        </div>
+      </div>
+    </div>
+
+  <!-- Подключаем jQuery -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <!-- Подключаем плагин Popper (необходим для работы компонента Dropdown и др.) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <!-- Подключаем Bootstrap JS -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>    
+</body>
+</html>
